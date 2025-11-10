@@ -45,5 +45,5 @@ mapa.size; // número de pares chave-valor
 const m = new Map([['x', 10], ['y, 20']]);
 
 m.forEach((valor, chave, mapa) => {
-    console.log(chave, valor, mapa);
+    console.log(chave);
 })
