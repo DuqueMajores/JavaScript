@@ -13,11 +13,9 @@ let Estoque = {
         { id: 1, nome: "Leite Ninho", preco: 5.50, quantidade: 150, validade: "14 Abril", fornecedor: "Ninho Ltda." }
     ]
 };
-
 function salvarStorage() {
     localStorage.setItem("Estoque", JSON.stringify(Estoque.estoque));
 }
-
 function montarTabela(lista = Estoque.estoque) {
     const header = `
         <tr>
@@ -49,7 +47,6 @@ function montarTabela(lista = Estoque.estoque) {
     resposta.innerHTML = tabelaHTML;
     return resposta.innerHTML;
 }
-
 function addEstoque(nome, preco, quantidade, validade, fornecedor) {
 
     if (!nome || !preco || !quantidade || !validade || !fornecedor) {
@@ -103,7 +100,6 @@ function addEstoque(nome, preco, quantidade, validade, fornecedor) {
     validadeProduto.value = "";
     fornecedorProduto.value = "";
 }
-
 function removerPorNome(nome) {
 
     const index = Estoque.estoque.findIndex(
@@ -117,7 +113,6 @@ function removerPorNome(nome) {
     salvarStorage();
     return true;
 }
-
 removerItem.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -145,7 +140,6 @@ removerItem.addEventListener("click", (e) => {
         `;
     }
 });
-
 submit.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -165,8 +159,6 @@ submit.addEventListener("click", (e) => {
 
     addEstoque(nome, preco, quantidade, validade, fornecedor);
 });
-
-
 function pesquisarItens() {
     const termo = document.getElementById("campoPesquisa").value.trim().toLowerCase();
 
@@ -199,7 +191,6 @@ function pesquisarItens() {
         `;
     }
 }
-
 function atualizarPorNome(nome, preco, quantidade, validade, fornecedor) {
 
     const item = Estoque.estoque.find(
@@ -216,7 +207,6 @@ function atualizarPorNome(nome, preco, quantidade, validade, fornecedor) {
     salvarStorage();
     return true;
 }
-
 document.getElementById("atualizarItem").addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -260,13 +250,10 @@ document.getElementById("atualizarItem").addEventListener("click", (e) => {
     validadeProduto.value = "";
     fornecedorProduto.value = "";
 });
-
-
 document.getElementById("pesquisarItem").addEventListener("click", (e) => {
     e.preventDefault();
     pesquisarItens();
 });
-
 verEstoque.addEventListener("click", (e) => {
     e.preventDefault();
 
