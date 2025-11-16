@@ -1,0 +1,227 @@
+/* ----------------------------- */
+/*  BASE E RESET                 */
+/* ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20210824/pngtree-yellow-green-background-stock-images-wallpaper-image_769660.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/*  CONTAINER DO FORM            */
+/* ----------------------------- */
+form {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    border: 1px solid #e0e0e0;
+}
+
+/* ----------------------------- */
+/*  LABELS E INPUTS              */
+/* ----------------------------- */
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: .2s;
+}
+
+input:focus {
+    border-color: #0077ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,.2);
+}
+
+/* ----------------------------- */
+/*  BOTÕES                       */
+/* ----------------------------- */
+#pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;                 /* Espaçamento entre elementos */
+    padding: 10px 0;          /* Respiro vertical */
+}
+
+#pesquisa input {
+    padding: 8px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s ease;
+}
+
+#pesquisa input:focus {
+    border-color: #4a8cff;     /* Feedback visual */
+}
+
+#pesquisa button {
+
+    background: #4a8cff;
+    padding: 10px 20px;
+    margin: 0 8px 6px 0;
+    border: 1px solid #d0d4d9;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f5f7 100%);
+    cursor: pointer;
+    margin-top: -11px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    letter-spacing: .3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    transition: all .2s ease-in-out;
+
+}
+
+#pesquisa button:hover {
+    background: #3a78e0;
+    border-color: #c2c7cc;
+    transform: translateY(-1px);
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 8px 6px 0;
+    border: 1px solid #d0d4d9;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f5f7 100%);
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    letter-spacing: .3px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    transition: all .2s ease-in-out;
+}
+
+/* Hover com experiência responsiva */
+button:hover {
+    background: #f0f1f3;
+    border-color: #c2c7cc;
+    transform: translateY(-1px);
+}
+
+#submit {
+    color: black;
+}
+
+#submit:hover {
+    background: #3a78e0;
+    color: white;
+}
+
+#verEstoque {
+    color: black;
+}
+
+#verEstoque:hover {
+    background: #44ad4a;
+    color: white;
+}
+
+#atualizarItem:hover {
+    background-color: yellow;
+}
+
+#removerItem {
+    color: black;
+}
+
+#removerItem:hover {
+    background: #c62828;
+    color: white;
+}
+
+/* ----------------------------- */
+/*  ÁREA DE RESPOSTA             */
+/* ----------------------------- */
+/* --------------------------- */
+/*  BLOCO DA TABELA (texto)    */
+/* --------------------------- */
+#resposta {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    overflow-x: auto;
+    display: block;
+}
+
+.tabela-estoque {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: #333;
+}
+
+.tabela-estoque th {
+    background: #f3f3f3;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tabela-estoque td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e2e2;
+    white-space: nowrap;
+}
+
+.tabela-estoque tr:hover {
+    background: lightgoldenrodyellow;
+}
+
+/* ----------------------------- */
+/*  RESPONSIVIDADE               */
+/* ----------------------------- */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #resposta {
+        max-width: 100%;
+    }
+}

@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADM Mercado</title>
-    <script src="estoque.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-    
+    <form>
+        <div id="pesquisa">
+            <input type="text" id="campoPesquisa" placeholder="Pesquisar..."> <button id="pesquisarItem">Pesquisar</button>
+        </div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nomeProduto" placeholder="nome do produto">
+        <br>
+        <label for="preco">Preço:</label>
+        <input type="text" name="preco" id="precoProduto" placeholder="valor do produto">
+        <br>
+        <label for="quantidade">Quant.:</label>
+        <input type="text" name="quantidade" id="quantidadeProduto" placeholder="quantidade total">
+        <br>
+        <label for="validade">Vald.:</label>
+        <input type="text" name="validade" id="validadeProduto" placeholder="validade do produto">
+        <br>
+        <label for="fornecedor">Fornecedor:</label>
+        <input type="text" name="fornecedor" id="fornecedorProduto" placeholder="nome da empresa">
+        <br><br>
+        <button id="submit">Cadastrar</button> <button id="atualizarItem">Atualizar</button> <button id="verEstoque">Estoque</button> <button
+            id="removerItem">Remover</button>
+    </form>
+    <br><br>
+    <div id="resposta">
+    </div>
+
+    <script src="src/JS/estoque.js"></script>
 </body>
+
 </html>
