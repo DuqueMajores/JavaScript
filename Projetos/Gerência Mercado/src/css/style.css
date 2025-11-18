@@ -27,18 +27,19 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     gap: 8px;
     margin-bottom: 20px;
 }
 
 .btnMenu button {
+    width: 90px;
     padding: 8px 18px;
     border: none;
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-
     background:gray;
     color: #fff;
     transition: all .25s ease-in-out;
@@ -228,6 +229,56 @@ button:hover {
     box-shadow: 0 3px 12px rgba(0,0,0,0.10);
     overflow-x: auto;
     display: block;
+}
+
+#menu {
+    background: rgba(187, 187, 187, 0.171);
+    backdrop-filter: blur(6px);
+    padding: 12px 20px;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+}
+
+/* Contêiner dos botões */
+.btnMenu {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Estilo dos botões */
+.btnMenu button {
+    width: 110px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    background-color: #f1f1f1;
+    color: black;
+
+    cursor: pointer;
+    transition: transform .2s ease, background .25s ease, box-shadow .25s ease;
+}
+
+/* Hover */
+.btnMenu button:hover {
+    background: linear-gradient(135deg, #0077ff, #77b6ff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    color: white;
+}
+
+/* Ativo / Foco */
+.btnMenu button:active,
+.btnMenu button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
 }
 
 .tabela-estoque {

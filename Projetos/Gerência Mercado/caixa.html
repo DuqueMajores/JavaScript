@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/caixa.css">
+</head>
+
+<body>
+
+    <div class="containerOperacaoCaixa">
+        <div id="menu">
+            <div class="btnMenu">
+                <a href="index.html"><button>Estoque</button> </a><a href="caixa.html"><button>Caixa</button></a>
+                <button>RH</button>
+                <button>Tesouro</button>
+            </div>
+        </div>
+        <form>
+
+            <h3>CAIXA</h3>
+            <br>
+
+            <div id="pesquisa">
+                <input type="text" id="campoPesquisa" placeholder="Pesquisar..."> <button
+                    id="pesquisarCaixa">Pesquisar</button>
+            </div>
+
+            <label for="rotuloCaixa">Rótulo Operacional:</label>
+            <input type="text" name="rotuloCaixa" id="rotuloCaixa" placeholder="digite o nome ou função do seu caixa">
+
+            <label for="admCaixa">Administrador:</label>
+            <input type="text" name="admCaixa" id="admCaixa" placeholder="adm do caixa">
+
+            <label for="localCaixa">Localidade:</label>
+            <input type="text" name="localCaixa" id="localCaixa" placeholder="endereço ou localização">
+
+            <label for="valorCaixa">Receita:</label>
+            <input type="text" name="valorCaixa" id="valorCaixa" placeholder="valor em caixa">
+
+            <label for="statusCaixa">Status:</label>
+            <input type="text" name="statusCaixa" id="statusCaixa" placeholder="ativo ou inativo?">
+            <br><br>
+            <button id="submit">Cadastrar</button> <button id="atualizarItem">Atualizar</button> <button
+                id="verEstoque">Ver Caixa</button> <button id="removerItem">Remover</button>
+        </form>
+        <div id="resposta">
+            <div id="containerBtnIcon1"><button id="btnIcon1"><img id="icon1" src="src/img/mais.png"></button></div>
+        </div>
+    </div>
+
+    <script src="src/JS/caixa.js"></script>
+
+</body>
+
+</html>

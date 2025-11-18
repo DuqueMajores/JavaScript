@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADM Mercado</title>
+    <title>Estoque</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
 
-    <div class="btnMenu">
-        <a href="index.html"><button>Estoque</button> </a><button>Caixa</button>
-        <button>RH</button>
-        <button>Tesouro</button>
-    </div>
-
     <div class="containerOperacaoEstoque">
+        <div id="menu">
+            <div class="btnMenu">
+                <a href="index.html"><button>Estoque</button> </a><a href="caixa.html"><button>Caixa</button></a>
+                <button>RH</button>
+                <button>Tesouro</button>
+            </div>
+        </div>
         <form>
+
+            <h3>ESTOQUE</h3>
+            <br>
+
             <div id="pesquisa">
                 <input type="text" id="campoPesquisa" placeholder="Pesquisar..."> <button
                     id="pesquisarItem">Pesquisar</button>
