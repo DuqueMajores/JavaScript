@@ -16,3 +16,27 @@
     display: block;
 }
 
+.tabela-caixa {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: #333;
+}
+
+.tabela-caixa th {
+    background: #f3f3f3;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tabela-caixa td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e2e2;
+    white-space: nowrap;
+}
+
+.tabela-caixa tr:hover {
+    background: lightgoldenrodyellow;
+}
