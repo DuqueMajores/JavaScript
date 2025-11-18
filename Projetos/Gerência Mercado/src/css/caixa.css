@@ -2,53 +2,6 @@
     display: flex;
 }
 
-#icon1 {
-    width: 15px;
-}
-
-#containerBtnIcon1 {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-
-    background: rgba(187, 187, 187, 0.171);
-    width: calc(100% + 40px);  /* compensando padding de #resposta */
-    margin-left: -20px;        /* compensação */
-    margin-right: -20px;
-
-    padding: 10px;
-    border-top: 1px solid #d0d0d0;;
-    border-bottom: 1px solid #d0d0d0;
-}
-
-.card-caixa {
-    width: 260px;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 12px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-}
-
-.card-caixa.expandido {
-    width: 260px;
-    max-height: 600px;
-}
-
-.card-conteudo {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease-in-out;
-}
-
-.card-caixa.expandido .card-conteudo {
-    max-height: 300px;
-    margin-top: 12px;
-}
-
 #resposta {
     background: #ffffff;
     padding: 20px;
